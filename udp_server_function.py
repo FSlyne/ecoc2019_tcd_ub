@@ -197,6 +197,7 @@ class testmode(object):
 
 if __name__ == '__main__':
 #    global dest, port, func, debug, mode, testing, remoteaddress, t
+#   https://realpython.com/command-line-interfaces-python-argparse/
    my_parser=argparse.ArgumentParser(description='Generate Local and Remote traffic profiles')
    my_parser.add_argument('-d', '--dest', action='store', metavar='dest', help='Destination UDP IP address', default=defaultdest)
    my_parser.add_argument('-p', '--port', action='store', metavar='port', type=int, help='Destination UDP port address', default=defaultport)
